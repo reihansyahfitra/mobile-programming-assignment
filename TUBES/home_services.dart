@@ -1,6 +1,28 @@
+/// home_services.dart
+/// 
+/// This file contains the implementation of the services section of the home screen of the Catcation app.
 
-
+// Importing required packages
 import 'package:flutter/material.dart';
+
+/// A function that returns a widget representing the services section of the home screen.
+/// 
+/// This widget displays a grid of services related to cats, such as cat care, cat health,
+/// cat shop, cat training, cat hotel, and cat groom. Each service is represented by a
+/// container with an icon and a text label.
+/// 
+/// The [Container] widget is used to set the height of the services section to double.infinity,
+/// which means the services section will take up all available vertical space.
+/// 
+/// The [GridView.count] widget is used to arrange the services in a grid.
+/// The crossAxisCount property of the [GridView.count] widget is set to 3, which means there are 3 columns in the grid.
+/// The physics property of the [GridView.count] widget is set to NeverScrollableScrollPhysics, which means the grid is not scrollable.
+/// 
+/// The [Align] widget is used to align the container for each service within the grid cell.
+/// 
+/// The [Container] widget is used to set the width and height of each service.
+/// The width and height are set to MediaQuery.of(context).size.width * 0.2 if the width of the screen is greater than 300,
+/// and 150 otherwise.
 
 Widget showServices(BuildContext context){
   return Container(

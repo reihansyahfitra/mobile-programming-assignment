@@ -1,6 +1,29 @@
+/// home_recommendation.dart
+/// 
+/// This file contains the implementation of the recommendations section of the home screen of the Catcation app.
+
+// Importing required packages
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+/// A function that returns a widget representing the recommendations section of the home screen.
+/// 
+/// This widget displays a horizontal list of recommended cat food items. Each item includes an image, product name, and price.
+/// 
+/// The [SizedBox] widget is used to set the height of the recommendations section to 350 and the width to double.infinity,
+/// which means the recommendations section will take up all available horizontal space.
+/// 
+/// The [ListView.builder] widget is used to create the list of recommended items.
+/// The scrollDirection property of the [ListView.builder] widget is set to Axis.horizontal, which means the list scrolls horizontally.
+/// The itemCount property of the [ListView.builder] widget is set to 20, which means there are 20 items in the list.
+/// 
+/// The itemBuilder property of the [ListView.builder] widget is set to a function that returns a widget for each item in the list.
+/// The widget for each item is a [Container] that contains an [ElevatedButton].
+/// 
+/// The [Container] widget is used to set the height and width of each item, and to add padding around the [ElevatedButton].
+/// 
+/// The [ElevatedButton] widget is used to make each item clickable.
+/// The onPressed property of the [ElevatedButton] is set to an empty function, which means nothing happens when the item is clicked.
 Widget showRecommendation(BuildContext context){
   return SizedBox(
     height: 350,
